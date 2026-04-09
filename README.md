@@ -131,6 +131,33 @@ npm install
 npm run dev
 ```
 
+### Half-speed radio
+
+This example receives FM radio and plays it half speed over audioContext.destination in Node.
+
+```js
+node ./examples/half-speed-radio.js
+```
+
+### Granular radio
+
+This example receives FM radio and plays it as a granular synthesis
+
+```js
+node ./examples/granular-radio.js
+```
+
+## Latency consideration
+
+Faire des tests avec l'émetteur de Tetsuo Kogawa pour calculer la latence.
+
+## Emetteur
+
+Documenter la création de l'émetteur
+
+## Embedded devices
+
+Documenter les spécificités de faire tourner le programme sur une raspberry pi (latence + CPU)
 
 
 ## Credits / Acknoledgments
