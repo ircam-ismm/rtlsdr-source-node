@@ -42,10 +42,10 @@ src.start();
 
 ## Documentation
 
-!(architecture)[./doc/RtlSdrSourceNode_architecture.png]
+!(architecture)[https://github.com/ircam-ismm/rtlsdr-source-node/blob/main/doc/RtlSdrSourceNode_architecture.png]
 
 ### RtlSdrStream
->[!INFO] used to access the dongle and create a stream with the demodulated signal
+> used to access the dongle and create a stream with the demodulated signal
 
 The `RtlSdrStream` is instanciated with the following default constructor (arg1: audioContext, arg2: set of parameters)
 ```js
@@ -84,7 +84,7 @@ stream.stop();
 ```
 
 ### RtlSdrSourceNode
->[!INFO] receive samples from the `RtlSdrStream` and play them.
+> receive samples from the `RtlSdrStream` and play them.
 
 The `RtlSdrSourceNode` is instanciated with the following default constructor (arg1: audioContext, arg2: stream)
 ```js
