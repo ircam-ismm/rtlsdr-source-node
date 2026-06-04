@@ -41,10 +41,11 @@ src.start();
 ```
 
 ## Documentation
-{#documentation}
+
+!(architecture)[./doc/RtlSdrSourceNode_architecture.png]
 
 ### RtlSdrStream
-[!INFO] used to access the dongle and create a stream with the demodulated signal
+>[!INFO] used to access the dongle and create a stream with the demodulated signal
 
 The `RtlSdrStream` is instanciated with the following default constructor (arg1: audioContext, arg2: set of parameters)
 ```js
@@ -83,7 +84,7 @@ stream.stop();
 ```
 
 ### RtlSdrSourceNode
-[!INFO] receive samples from the `RtlSdrStream` and play them.
+>[!INFO] receive samples from the `RtlSdrStream` and play them.
 
 The `RtlSdrSourceNode` is instanciated with the following default constructor (arg1: audioContext, arg2: stream)
 ```js
@@ -147,21 +148,30 @@ This example receives FM radio and plays it as a granular synthesis
 node ./examples/granular-radio.js
 ```
 
-## Latency consideration
-
-Faire des tests avec l'émetteur de Tetsuo Kogawa pour calculer la latence.
-
-## Emetteur
-
-Documenter la création de l'émetteur
-
 ## Embedded devices
 
-Documenter les spécificités de faire tourner le programme sur une raspberry pi (latence + CPU)
+You may have to reduce downsamplerTaps and rfTaps parameters in order to run this library on a single-board computer.
 
+## Latency consideration
 
-## Credits / Acknoledgments
+You may try to reduce bufferingDuration and increase bufferPerSecond parameters in order to reduce latency. 
+We carried out some tests and achieved a total latency of 169 ms with optimal reception quality on a single-board computer.
 
+## Emetteur
+As part of this research project, we also tested several methods of transmitting an FM signal.
+
+### HackHF One
+
+Using an (HackRF One)[https://www.passion-radio.fr/emetteur-sdr/hackrf-sdr-75.html] and (GNURadio)[https://www.gnuradio.org/].
+We tried the method proposed by Phutinyane et al. in the paper ‘AN-SDR-Based Multi-Channel FM Transmitter’
+
+### Tetsuo Kogawa
+
+On his (website)[https://anarchy.translocal.jp/radio/micro/howtosimplestTX.html], Japanese artist Tetsuo Kogawa proposes a simple implementation of an FM transmitter. 
+
+### RaspberryPi
+
+Christophe Jacquet mades a (library)[github.com/ChristopheJacquet/PiFmRds] to generates an FM modulation, with RDS datas using the Raspberry Pi.
 
 ## Licence
 
