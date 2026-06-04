@@ -42,7 +42,7 @@ src.start();
 
 ## Documentation
 
-!(architecture)[https://github.com/ircam-ismm/rtlsdr-source-node/blob/main/doc/RtlSdrSourceNode_architecture.png]
+![architecture](https://github.com/ircam-ismm/rtlsdr-source-node/blob/main/doc/RtlSdrSourceNode_architecture.png)
 
 ### RtlSdrStream
 > used to access the dongle and create a stream with the demodulated signal
@@ -162,16 +162,16 @@ As part of this research project, we also tested several methods of transmitting
 
 ### HackHF One
 
-Using an (HackRF One)[https://www.passion-radio.fr/emetteur-sdr/hackrf-sdr-75.html] and (GNURadio)[https://www.gnuradio.org/].
+Using an [HackRF One](https://www.passion-radio.fr/emetteur-sdr/hackrf-sdr-75.html) and [GNURadio](https://www.gnuradio.org/).
 We tried the method proposed by Phutinyane et al. in the paper ‘AN-SDR-Based Multi-Channel FM Transmitter’
 
 ### Tetsuo Kogawa
 
-On his (website)[https://anarchy.translocal.jp/radio/micro/howtosimplestTX.html], Japanese artist Tetsuo Kogawa proposes a simple implementation of an FM transmitter. 
+On his [website](https://anarchy.translocal.jp/radio/micro/howtosimplestTX.html), Japanese artist Tetsuo Kogawa proposes a simple implementation of an FM transmitter. 
 
 ### RaspberryPi
 
-Christophe Jacquet mades a (library)[github.com/ChristopheJacquet/PiFmRds] to generates an FM modulation, with RDS datas using the Raspberry Pi.
+Christophe Jacquet mades a [library](github.com/ChristopheJacquet/PiFmRds) to generates an FM modulation, with RDS datas using the Raspberry Pi.
 
 ## Licence
 
